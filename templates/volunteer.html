@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumi Volunteers</title>
+    <link href="{{ url_for('static', path='/volunteer.css') }}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="{{ url_for('static', path='bhumi_logo.png') }}" height="50" width="100">
+        <ul class="nav-list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul> 
+    </nav>
+    <h1>Volunteer Registration</h1>
+    <div class="container1">
+        <form action="/register" method="POST">
+            <p>Full name : <input type="text" name="f_name" size="50"></p>
+            <p>Mobile Number : <input type="text" name="number" size="20"></p>
+            <p>Email-id : <input type="email" name="email" size="35"></p>
+            <p><input type='submit' size="10" value='Submit'><input type="reset" value="Reset"></p>
+        </form>
+    </div>
+    <div class="container2">
+        <h2>Our Volunteers</h2>
+        <marquee scrollamount="30">
+            <img src="{{ url_for('static', path='v3.jpeg') }}" height="300" width="400">
+            <img src="{{ url_for('static', path='v_recog1.jpeg') }}" height="300" width="400">
+            <img src="{{ url_for('static', path='v4.jpeg') }}" height="300" width="400">
+            <img src="{{ url_for('static', path='v_recog2.jpeg') }}" height="300" width="400">
+            <img src="{{ url_for('static', path='v5.jpg') }}" height="300" width="400">
+            <img src="{{ url_for('static', path='v_recog3.png') }}" height="300" width="400">
+            <img src="{{ url_for('static', path='v6.jpg') }}" height="300" width="400">
+            <img src="{{ url_for('static', path='v_recog4.png') }}" height="300" width="400">
+            <img src="{{ url_for('static', path='v_recog5.png') }}" height="300" width="400">
+        </marquee>
+    </div>
+    <div class="container3">
+        <p>
+            SOCIAL MEDIA<br>
+            <img src="{{ url_for('static', path='social_media.png') }}" height="100" width="400"><br>
+            Â© 2023 Bhumi NGO.<br>
+            All rights reserved.<br>
+        </p>
+    </div>
+</body>
+</html>

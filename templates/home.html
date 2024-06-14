@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumi NGO</title>
+    <link href="{{ url_for('static', path='/home.css') }}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="{{ url_for('static', path='bhumi_logo.png') }}" height="50" width="100">
+        <ul class="nav-list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Volunteer">Volunteer</a></li>
+            <li><a href="#Donate">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul> 
+    </nav>
+    <p class="container1" id="Home">
+        <img src ="{{ url_for ('static', path='bhumi_children.jpeg') }}" height="300" width="400">
+        <p class="w1">
+            Welcome to BHUMI, where we're passionately dedicated to empowering children through education, 
+            one community at a time.
+        </p>
+        <a href="#About"><button class="know">Know More</button></a>
+        <p class="w2">
+            Igniting Potential, One Child at a Time!
+        </p>
+    </p>
+
+    <div class="container2">
+        <marquee scrollamount="15"><h3>BHUMI has helped in educating over 1,68,000 children as of 2021.</h3></marquee>
+        <div class="images">
+            <img src="{{ url_for('static', path='v1.jpeg') }}" height="300" width="28%">
+            <img src="{{ url_for('static', path='statistics.png') }}" height="300" width="28%">
+            <img src="{{ url_for('static', path='donate.jpeg') }}" height="300" width="28%">
+        </div>
+    </div>
+
+    <div class="container3" id="About">
+        <h2>About Us</h2>
+        <p>
+            <img src="{{ url_for('static', path='bhumi_child.jpg') }}" height="300" width="400">
+            At Bhumi, we believe that education is not just a privilege but a fundamental right for every child. 
+            Our mission is to break barriers and create opportunities for underprivileged children to access quality education, 
+            laying the foundation for a brighter future. Through our dedicated initiatives since 2018, we strive to make a tangible 
+            difference in the lives of children across communities. We follow various approaches like Holistic Education, 
+            Empowerment through knowledge and Community engagement to provide children with education that nurtures their 
+            intellectual, emotional and social development, empower them to break the cycle of poverty and reach their full 
+            potential. Through partnerships with local schools, volunteers, and stakeholders, we create a supportive 
+            environment where children can thrive.
+        </p>
+    </div>
+
+    <div class="container4">
+        <h2>Our Programs</h2>
+        <ul>
+            <li>
+                School Adoption Program: Under this program, we adopt government schools in underserved areas, working 
+                closely with school authorities to improve infrastructure, curriculum, and teaching standards.
+            </li>
+            <li>
+                Tutoring and Mentoring: Our dedicated volunteers provide personalized tutoring and mentoring to children, 
+                offering academic support and guidance to help them succeed in their studies.
+            </li>
+            <li>
+                Digital Literacy: In today's digital age, access to technology is crucial. Through our digital literacy 
+                programs, we provide children with the skills they need to navigate the digital world confidently.
+            </li>
+        </ul>
+        <p>
+            Through our relentless efforts, we have touched the lives of thousands of children, empowering them to dream big and
+            aspire for a better tomorrow. Our success stories stand as a testament to the transformative power of education, 
+            inspiring hope and driving positive change in communities.
+        </p>
+    </div>
+
+    <div class="container5" id="Volunteer">
+        <img src="{{ url_for('static', path='v2.jpeg') }}" height="400" width="400">
+        <h2>Apply and become a changemaker</h2>
+        <a href="volunteer.html"><button class="but">Register as Volunteer</button></a>
+    </div>
+
+    <div class="container6" id="Donate">
+        <img src="{{ url_for('static', path='donate.jpeg') }}" height="400" width="400">
+        <h3>
+            Be the change you wish to see in the world. Your donation can help build a brighter, more equitable future for all 
+            children.
+        </h3>
+        <a href="donate.html"><button class="but">Donate</button></a>
+    </div>
+
+    <div class="container7">
+        <p>
+            SOCIAL MEDIA<br>
+            <img src="{{ url_for('static', path='social_media.png') }}" height="100" width="400"><br>
+            Â© 2023 Bhumi NGO.<br>
+            All rights reserved.<br>
+        </p>
+    </div>
+</body>
+</html>
